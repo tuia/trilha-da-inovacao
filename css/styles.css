@@ -1,0 +1,105 @@
+
+body {
+	min-width: 1024px;
+}
+
+h1, footer h3 {
+	color: #D45650;
+	font-weight: 600;
+}
+
+.navbar {
+	margin: 0;
+	text-align: center;
+	padding: 10px 0;
+}
+
+header {
+	background: #F1F5F9;
+	border-bottom: 1px solid #dddddd;
+}
+header .header-logo {
+	display: block;
+	padding: 40px 0 20px;
+}
+header .nav-tabs {
+	position: relative;
+	bottom: -1px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+	background: #E7ECF0;
+}
+
+main {
+	background: #e7ecf0;
+	background: -moz-linear-gradient(top, #e7ecf0 0%, #a3bccc 100%);
+	background: -webkit-linear-gradient(top, #e7ecf0 0%,#a3bccc 100%);
+	background: linear-gradient(to bottom, #e7ecf0 0%,#a3bccc 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7ecf0', endColorstr='#a3bccc',GradientType=0 );
+	padding: 20px 0;
+}
+.track-cards {
+	list-style: none;
+	padding: 0;
+	margin-top: 40px;
+}
+.track-cards .card {
+	display: block;
+	background: #F2F2F2;
+	border: 1px solid #B3B3B3;
+	border-radius: 10px;
+	text-align: center;
+	margin: 30px 0;
+	padding: 10px;
+	transition: background .2s ease-in;
+}
+.track-cards .card:hover {
+	text-decoration: none;
+	background: #E2E2E2;
+}
+.card-title {
+	text-transform: uppercase;
+	font-size: 15px;
+	letter-spacing: .05em;
+	margin: .5em auto;
+}
+.carousel {
+	background: #F2F2F2;
+	margin: 40px auto;
+	padding: 0 50px;
+}
+.carousel .carousel-inner a {
+	text-align: center;
+	display: block;
+	padding: 30px 10px;
+	position: relative;
+}
+.carousel .carousel-inner a img {
+	max-height: 80px;
+	max-width: 100%;
+}
+.carousel .carousel-control {
+	background: transparent;
+	color: #666666;
+	text-shadow: none;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold
+}
+
+footer {
+	background: #4D4C4C;
+	padding: 20px 0;
+}
+footer .img-responsive {
+	padding-top: 50px;
+}
+footer a {
+	color: #999999;
+}
+footer a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
