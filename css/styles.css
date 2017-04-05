@@ -1,9 +1,10 @@
 
 body {
 	min-width: 1024px;
+	background: #F1F5F9
 }
 .container {
-	min-width: 970px
+	width: 970px;
 }
 
 h1, footer h3 {
@@ -22,8 +23,14 @@ header {
 	border-bottom: 1px solid #dddddd;
 }
 header .header-logo {
-	display: block;
+	float: left;
 	padding: 40px 0 20px;
+}
+header .header-logo + div{
+	display: inline-block !important;
+	float: right !important;
+	z-index: 3 !important;
+	padding-top: 30px !important;
 }
 header .nav-tabs {
 	position: relative;
@@ -97,6 +104,142 @@ main {
 	justify-content: center;
 	font-weight: bold
 }
+
+/*main-content*/
+.track-container {
+	flex: 1;
+	position: relative;
+}
+.layer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-width: 100%;
+	text-align: center;
+}
+.svg-box {
+	max-height:100vh;
+	margin: 0 auto;
+}
+.casa {
+	stroke-width:2;
+	stroke:#FFFFFF;
+	transition: opacity .2s ease-in;
+}
+.casa:hover {
+	stroke-width:2;
+	stroke:#3576a8;
+	cursor: pointer;
+}
+.casa.oculta{
+	opacity: .3;
+}
+
+.tip {
+	position: absolute;
+	background: #3576a8;
+	text-align: center;
+	border-radius: 20px;
+	padding: 20px;
+	color: #FFFFFF;
+	max-width: 320px;
+	display: none;
+	transform: translate(-50%, 0); 
+	-webkit-transform: translate(-50%, 0); 
+	font-size: 13px;
+	box-shadow: 0 2px 4px rgba(0,0,0,.3)
+}
+
+section .tip:first-child {
+	left: 50%;
+	top: 30%;
+}
+section .tip:nth-child(2) {
+	right: -80px;
+	top: 35%;
+}
+section .tip:nth-child(3) {
+	right: -80px;
+	top: 60%;
+}
+section .tip:nth-child(4) {
+	left: 50%;
+	top: 60%;
+}
+section .tip:nth-child(5) {
+	left: 240px;
+	top: 22%;
+}
+section .tip:nth-child(6) {
+	left: 240px;
+	bottom: 35%;
+}
+section .tip:nth-child(7) {
+	left: 50%;
+	bottom: 30%;
+}
+section .tip:nth-child(8) {
+	right: -80px;
+	bottom: 30%;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.75);
+}
+/* The Modal (background) */
+.modal-header {
+	background: #3576A8;
+	color: #FFFFFF;
+	border-radius: 4px 4px 0 0;
+}
+
+article {
+	text-align: center;
+}
+article p {
+	font-size: 18px;
+	line-height: 1.5em;
+	margin-bottom: 2em;
+}
+article .subtitle {
+	font-style: italic;
+	font-size: 22px;
+	color: #999
+}
+article h1 {
+	margin-bottom: 5px;
+}
+main article .container {
+	width: 740px;
+	min-width: 740px;
+	padding: 30px 0;
+}
+article .caption {
+	font-style: italic;
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+
+.contact-form {
+	padding: 40px 0;
+}
+.contact-form h1 {
+	margin: 0 auto 1em;
+}
+.contact-form .form-group {
+	margin-bottom: 20px
+}
+.contact-form textarea {
+	resize: vertical;
+	min-height: 34px;
+	max-height: 300px
+}
+
 
 footer {
 	background: #4D4C4C;

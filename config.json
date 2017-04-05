@@ -392,10 +392,10 @@
     "progress-bars.less",
     "media.less",
     "panels.less",
+    "responsive-embed.less",
     "close.less",
     "component-animations.less",
     "dropdowns.less",
-    "tooltip.less",
     "popovers.less",
     "modals.less",
     "carousel.less"
@@ -408,5 +408,5 @@
     "affix.js",
     "transition.js"
   ],
-  "customizerUrl": "http://getbootstrap.com/customize/?id=22eb13b5da6f7ec2152700269b940995"
+  "customizerUrl": "http://getbootstrap.com/customize/?id=f572e3466fff86defabc26fa75298486"
 }
