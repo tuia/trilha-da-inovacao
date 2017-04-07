@@ -54,30 +54,46 @@ main {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7ecf0', endColorstr='#a3bccc',GradientType=0 );
 	padding: 20px 0;
 }
+.card {
+	background: #F2F2F2;
+	border: 1px solid #B3B3B3;
+	border-radius: 10px;
+	padding: 10px;
+	transition: background .2s ease-in;
+}
 .track-cards {
 	list-style: none;
 	padding: 0;
 	margin-top: 40px;
 }
 .track-cards .card {
-	display: block;
-	background: #F2F2F2;
-	border: 1px solid #B3B3B3;
-	border-radius: 10px;
 	text-align: center;
 	margin: 30px 0;
-	padding: 10px;
-	transition: background .2s ease-in;
+	display: block;
 }
-.track-cards .card:hover {
+.card:hover {
 	text-decoration: none;
 	background: #E2E2E2;
 }
 .card-title {
 	text-transform: uppercase;
 	font-size: 15px;
-	letter-spacing: .05em;
 	margin: .5em auto;
+}
+.flex-cards {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-cards .card {
+	width: 23%;
+	margin: 1%;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	padding: 20px;
+}
+.flex-cards .card img{
+	width: 100%;
 }
 .carousel {
 	background: #F2F2F2;
@@ -211,17 +227,62 @@ main {
 }
 
 
-
-/* The Modal (background) */
 .modal {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.75);
+  display: block;
 }
-/* The Modal (background) */
+.modal-content {
+	border-radius: 22px;
+}
 .modal-header {
 	background: #3576A8;
 	color: #FFFFFF;
-	border-radius: 4px 4px 0 0;
+	border-radius: 20px 20px 0 0;
+	padding: 30px 40px 0;
+}
+.modal-header p {
+	color: rgba(255,255,255,.5);
+}
+.modal-header .close {
+	color: #FFFFFF;
+	font-size: 30px;
+}
+.modal-title {
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+.modal-header .nav-tabs {
+	border-bottom: none;
+	margin: 20px auto 0
+}
+.modal-header .nav-tabs>li>a {
+	text-transform: uppercase;
+	color: #FFFFFF;
+	color: rgba(255,255,255,.5);
+	padding: 15px 30px;
+}
+.modal-header .nav-tabs>li>a, .modal-header .nav-tabs>li>a:hover, .modal-header .nav-tabs>li>a:visited, .modal-header .nav-tabs>li>a:link, .modal-header .nav-tabs>li>a:active {
+	border: none;
+	border-bottom: 4px solid transparent;
+}
+.modal-header .nav-tabs>li>a:hover {
+	background: transparent;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.modal-header .nav-tabs>li.active>a {
+	border-bottom: 4px solid #FFFFFF;
+	background: transparent;
+	color: #FFFFFF;
+	font-weight: 700;
+}
+.modal-body {
+	background: #E6E6E6;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 30px;
 }
 
 article {
