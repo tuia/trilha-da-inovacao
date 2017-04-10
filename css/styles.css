@@ -71,7 +71,7 @@ main {
 	margin: 30px 0;
 	display: block;
 }
-.card:hover {
+a.card:hover {
 	text-decoration: none;
 	background: #E2E2E2;
 }
@@ -84,16 +84,36 @@ main {
 	display: flex;
 	flex-wrap: wrap;
 }
-.flex-cards .card {
+.flex-cards.two .card {
+	width: 48%;
+	margin: 1%;
+}
+.flex-cards.two .card p {
+	font-size: 13px;
+	margin-bottom: 15px;
+}
+
+.flex-cards.four .card {
 	width: 23%;
 	margin: 1%;
 	align-items: center;
 	justify-content: center;
 	display: flex;
+}
+.flex-cards .card {
 	padding: 20px;
 }
 .flex-cards .card img{
 	width: 100%;
+}
+.card h5 {
+	color: #D45650;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 0;
+}
+.flex-cards .card .btn-default {
+	color: #1F9DD3;
 }
 .carousel {
 	background: #F2F2F2;
@@ -230,7 +250,6 @@ main {
 .modal {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.75);
-  display: block;
 }
 .modal-content {
 	border-radius: 22px;
@@ -283,6 +302,8 @@ main {
 	background: #E6E6E6;
 	border-radius: 0 0 20px 20px;
 	padding: 20px 30px;
+	overflow: auto;
+	max-height: 55vh;
 }
 
 article {
